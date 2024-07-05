@@ -1,0 +1,99 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set a base font and background color for the whole page */
+body {
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  background-color: #eef1f5;
+}
+
+/* Style the navbar container */
+.navbar {
+  width: 220px; /* Slightly wider for more space */
+  height: 100vh; /* Full height */
+  background: linear-gradient(145deg, #485563, #29323c); /* Glossy gradient background */
+  color: #fff; /* White text color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+  position: fixed; /* Fix the position to the left */
+  left: 0;
+  top: 0;
+  border-radius: 0 10px 10px 0; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Add some padding to the top of the navbar */
+.navbar h2 {
+  margin-bottom: 30px;
+  font-size: 1.8rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  text-align: center; /* Centered text */
+  color: #eaecef; /* Slightly off-white for better contrast */
+}
+
+/* Style the links inside the navbar */
+.navbar ul {
+  list-style: none; /* Remove bullets */
+  padding: 0; /* Remove default padding */
+  width: 100%; /* Full width */
+}
+
+.navbar ul li {
+  width: 100%; /* Full width */
+}
+
+.navbar ul li a {
+  display: block; /* Make the link a block element */
+  width: 100%; /* Full width */
+  padding: 15px 0; /* Add some padding */
+  color: #eaecef; /* Slightly off-white text color */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth background color change */
+  text-align: center; /* Center text */
+  font-size: 1.1rem; /* Increase font size for better readability */
+  border-radius: 5px; /* Rounded corners for links */
+  margin-bottom: 10px; /* Space between links */
+}
+
+.navbar ul li a:hover {
+  background-color: #4b545e; /* Lighter dark color on hover */
+  color: #ffffff; /* White text on hover */
+}
+
+/* Style the logout button */
+.logoutbutton {
+  background: linear-gradient(145deg, #e74c3c, #c0392b); /* Glossy red background */
+  color: #fff; /* White text color */
+  padding: 10px 20px; /* Add some padding */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  margin: 20px auto; /* Center horizontally and add space at the top and bottom */
+  transition: background 0.3s ease, transform 0.3s ease; /* Smooth background color change and transform */
+  text-align: center;
+  width: calc(100% - 40px); /* Make the button width consistent and centered */
+  max-width: 180px; /* Set a max width for the button */
+  font-size: 1.1rem; /* Increase font size for better readability */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Use flexbox to center text inside button */
+  justify-content: center; /* Center text inside button */
+  align-items: center; /* Center items vertically */
+}
+
+
+.logoutbutton:hover {
+  background: linear-gradient(145deg, #c0392b, #a93226); /* Darker red on hover */
+  transform: scale(1.05); /* Slightly increase size on hover */
+}
+
+/* Add some spacing to the main content to prevent it from being hidden behind the navbar */
+.main-content {
+  margin-left: 220px; /* Same width as the navbar */
+  padding: 20px; /* Add some padding */
+}
